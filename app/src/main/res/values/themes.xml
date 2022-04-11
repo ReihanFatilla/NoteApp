@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NoteApp" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <!-- Custom Floating Action Bar-->
+        <item name="floatingActionButtonStyle">@style/FabShapeStyle</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Custom Action Bar-->
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+
+    <style name="FabShapeStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/FABCornerRadius</item>
+    </style>
+
+    <style name="FABCornerRadius" parent="FabShapeStyle">
+        <item name="cornerSize">33%</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="android:Widget.ActionBar">
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="noActionBar" parent="Theme.NoteApp">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splashscreen</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+</resources>
